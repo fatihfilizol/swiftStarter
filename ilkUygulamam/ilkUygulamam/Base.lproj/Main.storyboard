@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ilkUygulamam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Muhteşem Göl Manzarası" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdM-Tp-106">
+                                <rect key="frame" x="39" y="381" width="337" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="bcn-Xp-plc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
+                                <color key="textColor" systemColor="systemPurpleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nehirmanzara" translatesAutoresizingMaskIntoConstraints="NO" id="qIj-HX-mc8">
+                                <rect key="frame" x="20" y="132" width="374" height="186"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZF-aE-IEK">
+                                <rect key="frame" x="20" y="455" width="356" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ud1-yA-XT7"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Değiştir Abicim">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnChange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Q7-Cf-dzm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fdM-Tp-106" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="JRm-1X-w3s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jZF-aE-IEK" secondAttribute="bottom" constant="363" id="POm-4H-ah4"/>
+                            <constraint firstItem="fdM-Tp-106" firstAttribute="top" secondItem="qIj-HX-mc8" secondAttribute="bottom" constant="63" id="Qcw-Ta-wwE"/>
+                            <constraint firstItem="qIj-HX-mc8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="88" id="RBK-B6-HMo"/>
+                            <constraint firstItem="qIj-HX-mc8" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="aKt-Vi-wIx"/>
+                            <constraint firstItem="qIj-HX-mc8" firstAttribute="centerX" secondItem="fdM-Tp-106" secondAttribute="centerX" id="d7H-BS-yCt"/>
+                            <constraint firstItem="qIj-HX-mc8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="g3o-wa-1Fv"/>
+                            <constraint firstItem="qIj-HX-mc8" firstAttribute="leading" secondItem="jZF-aE-IEK" secondAttribute="leading" id="g6a-ya-5yy"/>
+                            <constraint firstItem="fdM-Tp-106" firstAttribute="trailing" secondItem="jZF-aE-IEK" secondAttribute="trailing" id="jET-hb-oVz"/>
+                            <constraint firstItem="jZF-aE-IEK" firstAttribute="top" secondItem="fdM-Tp-106" secondAttribute="bottom" constant="24" id="vkm-CE-0DB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgHead" destination="qIj-HX-mc8" id="bqP-yE-55N"/>
+                        <outlet property="lblAbout" destination="fdM-Tp-106" id="bnq-kX-mjl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="79.017857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="nehirmanzara" width="830" height="415"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
